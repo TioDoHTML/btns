@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BOTÃO ANIMADO</title>
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		width: 100vw;
+		height: 100vh;
+		background: #212121;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.btnAnimado {
+		width: 160px;
+		height: 50px;
+		background-color:  #3f51b5;
+		border-radius: 4px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color:  #fff;
+		font-family: verdana, sans-serif;
+		/* vamos criar o nome da animação e como ela ocorrerá */
+		animation: treme 0.8s infinite alternate;
+	}
+
+	 /* vamos fazer parar quando o mouse estiver sobre o botão */
+
+	 .btnAnimado {
+	 	animation: nome;
+	 }
+
+
+	/* agora vamos criar o frame de animação
+	   a animação ocorrerá infinitamente.	
+	 */
+
+	@keyframes treme {
+		/*inicia*/
+		from {
+		  transform: translateX(10px);	
+          /*transform: rotate(5deg);*/    
+		}
+   
+        /*finaliza*/
+		to {
+		  transform: translateX(-10px);	
+		  /*transform: rotate(-5deg);*/ 
+		}
+	}
+    /* veja o link do código no github */ :)
+</style>
+<body>
+	<div class="btnAnimado">CADASTRA-SE</div>
+</body>
+</html>
