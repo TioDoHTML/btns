@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- vamos acrescentar o icone do google fontes -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<title>Rotacionar ou Girar Imagem em um Botão</title>
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	header {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	header, nav {
+		height: 60px;
+	}
+
+	header nav {
+		width: 80%;
+		border-bottom: 1px solid #000;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	a {
+		width: 140px;
+		height: 40px;
+		border-radius: 5px;
+		background-color: #00897b;
+		font-family: 'Trebuchet MS';
+		font-size:  14px;
+		text-decoration: none;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.material-icons {
+		margin-right: 5px;
+	}
+
+	/* vamos fazer a imagem girar/rotacionar */
+
+	a:hover .material-icons {
+		animation: girar 1s linear infinite;
+	}
+
+	@keyframes girar {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+	/* veja o código do github na descrição */
+</style>
+<body>
+
+	<header>
+		<nav>
+			<a href=""> <span class="material-icons">settings </span> Configurações</a>
+		</nav>
+	</header>
+	
+</body>
+</html>
